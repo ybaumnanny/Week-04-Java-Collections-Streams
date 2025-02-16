@@ -16,8 +16,8 @@ class MainTest {
         assertNotNull(bugReports);
         assertEquals(2, bugReports.value().length);
         assertEquals("Null pointer exception in processData", bugReports.value()[0].description());
-        assertEquals("Ankit", bugReports.value()[0].reportedBy());
+        assertEquals("Yaman", bugReports.value()[0].reportedBy());
         assertEquals("Performance issue in data processing", bugReports.value()[1].description());
-        assertEquals("Aakrati", bugReports.value()[1].reportedBy());
+        assertEquals("Shasha", bugReports.value()[1].reportedBy());
     }
 }
