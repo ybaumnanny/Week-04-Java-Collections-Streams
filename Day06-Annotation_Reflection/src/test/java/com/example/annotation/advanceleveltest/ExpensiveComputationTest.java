@@ -1,4 +1,4 @@
-package com.example.annotation.advanceleveltest.customcachingtest;
+package com.example.annotation.advanceleveltest;
 
 import com.example.annotation.advancelevel.customcaching.ExpensiveComputation;
 import org.junit.jupiter.api.Test;
