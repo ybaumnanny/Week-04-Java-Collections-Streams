@@ -14,17 +14,7 @@ public class User {
     }
 
     private void validateMaxLength(String username) {
-        try {
-            Field field = this.getClass().getDeclaredField("username");
-            if (field.isAnnotationPresent(MaxLength.class)) {
-                int maxLength = field.getAnnotation(MaxLength.class).value();
-                if (username.length() > maxLength) {
-                    throw new IllegalArgumentException("Username exceeds max length of " + maxLength + " characters.");
-                }
-            }
-        } catch (NoSuchFieldException e) {
-            e.printStackTrace();
-        }
+
     }
 
     public String getUsername() {
@@ -40,6 +30,10 @@ public class User {
         } catch (IllegalArgumentException e) {
             System.out.println("Error: " + e.getMessage());
         }
+    }
+
+    public String getDetails() {
+        return "Username: " + username;
     }
 }
 
